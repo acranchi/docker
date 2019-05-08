@@ -1,7 +1,6 @@
-FROM mcr.microsoft.com/dotnet/framework/wcf:4.7.2-windowsservercore-ltsc2019
-# ARG baseimage
-# ARG tag
-# FROM $baseimage:$tag
+ARG baseimage
+ARG tag
+FROM $baseimage:$tag
 
 LABEL "com.spring.mseries"="Spring Global"
 LABEL service="advdistribution"
