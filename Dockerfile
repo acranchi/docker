@@ -20,7 +20,7 @@ RUN mkdir C:\mseries\WsAdvancedDistributionProcessor ; \
     mkdir C:\mseries\Logs
 
 # Copy mSeries files
-COPY files .
+COPY C:\spring\containers\mseries-files\advdistribution\files .
 
 # Create the windows service and mantein the container running even if the service stop.  
 RUN New-Service -name MSeriesWs.AdvancedDistributionProcessor -displayName "\"Spring Wireless - Ws.AdvancedDistributionProcessor\"" -binaryPathName "C:\mseries\WsAdvancedDistributionProcessor\SpringMS.Common.Server.Job.Ws.AdvancedDistributionProcessor.exe" -startupType Automatic -Description "\"Advanced Distribution Processor Service\""
