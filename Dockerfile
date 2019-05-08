@@ -12,7 +12,6 @@ LABEL maintainer="devops@springglobal.com"
 # To set my Root Directory
 WORKDIR mseries
 # escape=`
-CONTEXT C:\\spring\\containers\\mseries-files\\advdistribution 
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
