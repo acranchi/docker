@@ -13,7 +13,6 @@ curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gp
       stable" && \
 	  apt-get update && \
       apt-get -y install docker-ce
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 RUN apt-get install -y docker-ce
 RUN usermod -a -G docker jenkins
 USER jenkins
